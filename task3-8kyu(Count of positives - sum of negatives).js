@@ -1,6 +1,6 @@
 //Given an array of integers.Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.If the input array is empty or null, return an empty array.
 function countPositivesSumNegatives(input) {
-  if (input.length < 1) {
+  if (input === null || input.length < 1) {
     return [];
   }
   var newArray = [0, 0];
