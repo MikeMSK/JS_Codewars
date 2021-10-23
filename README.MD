@@ -1,1 +1,1 @@
-Resolve KATA (codewars)
+#Resolve KATA (codewars)
