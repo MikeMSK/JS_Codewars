@@ -1,17 +1,8 @@
-/*An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+/*Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
 
-Note: anagrams are case insensitive
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.*/
 
-Complete the function to return true if the two arguments given are anagrams of each other; return false otherwise.
-
-Examples
-"foefet" is an anagram of "toffee"
-
-"Buckethead" is an anagram of "DeathCubeK"*/
-
-function isAnagram(test, original) {
-  return (
-    test.toLowerCase().split("").sort().join("") ===
-    original.toLowerCase().split("").sort().join("")
-  );
+function lovefunc(flower1, flower2) {
+  let result = (flower1 + flower2) % 2 == 0 ? false : true;
+  return result;
 }
